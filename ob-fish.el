@@ -26,6 +26,8 @@
 (eval-after-load 'org
   '(add-to-list 'org-src-lang-modes '("fish" . fish)))
 
+(defvar org-babel-default-header-args:fish '())
+
 (add-to-list 'org-babel-default-header-args:fish
              '(:result . "output"))
 
