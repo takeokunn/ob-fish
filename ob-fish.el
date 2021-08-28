@@ -1,3 +1,14 @@
+;;; ob-fish.el --- Org-babel functions for Fish Script  -*- lexical-binding: t; -*-
+
+;; Copyright (C) 2021 takeokunn
+
+;; Author: takeokunn
+;; Maintainer: takeokunn
+;; Created: 28 Aug 2021
+;; Keywords: fish script languages, org, babel
+;; Homepage: https://github.com/takeokunn/ob-fish/
+;; Version: 0.0.1
+
 ;;; Code
 (require 'org)
 (require 'ob)
@@ -17,7 +28,7 @@
   :type 'string)
 
 ;;;###autoload
-(defun org-babel-execute:fish (body params)
+(defun org-babel-execute:fish (body _)
   "Org mode fish evaluate function"
   (let ((cmd (concat org-babel-fish-command " " org-babel-fish-command-options)))
     (org-babel-eval cmd body)))
