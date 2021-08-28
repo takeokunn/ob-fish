@@ -14,5 +14,5 @@ say_hello "world"
 
 ```org
 #+RESULTS:
-  : Hello, 世界
+  : Hello world
 ```
