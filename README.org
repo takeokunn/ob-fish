@@ -1,0 +1,14 @@
+* ob-fish
+
+ob-fish enables [[https://orgmode.org/worg/org-contrib/babel/intro.html][orb-babel]] support for evaluating [[https://fishshell.com/docs/current/][fish]] code.
+
+#+begin_src fish
+  function say_hello
+      echo Hello $argv
+  end
+
+  say_hello "world"
+#+end_src
+
+#+RESULTS:
+: Hello world
