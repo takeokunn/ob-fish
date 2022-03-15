@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2021 takeokunn
 
-;; Author: takeokunn
-;; Maintainer: takeokunn
+;; Author: takeo obara
+;; Maintainer: takeo obara
 ;; Created: 28 Aug 2021
 ;; Keywords: fish script languages, org, babel
 ;; Homepage: https://github.com/takeokunn/ob-fish/
@@ -36,10 +36,5 @@
 ;;;###autoload
 (eval-after-load 'org
   '(add-to-list 'org-src-lang-modes '("fish" . fish)))
-
-(defvar org-babel-default-header-args:fish '())
-
-(add-to-list 'org-babel-default-header-args:fish
-             '(:result . "output"))
 
 (provide 'ob-fish)
