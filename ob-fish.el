@@ -38,3 +38,5 @@
   '(add-to-list 'org-src-lang-modes '("fish" . fish)))
 
 (provide 'ob-fish)
+
+;;; ob-fish.el ends here
