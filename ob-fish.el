@@ -30,7 +30,7 @@
 ;;;###autoload
 (defun org-babel-execute:fish (body _)
   "Org mode fish evaluate function"
-  (let ((cmd (concat org-babel-fish-command " " org-babel-fish-command-options)))
+  (let ((cmd (concat org-babel-fish-command " " (mapconcat 'string org-babel-fish-command-options " "))))
     (org-babel-eval cmd body)))
 
 ;;;###autoload
